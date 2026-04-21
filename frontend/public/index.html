@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchTower - Timeline</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">WatchTower</a></h1>
+    <nav>
+      <a href="index.html" class="active">Timeline</a>
+      <a href="approvals.html">Approvals</a>
+      <a href="https://github.com/Aruthrasathishkumar/Watchtower-MCP-server-for-incident-response" target="_blank">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <div class="stat-grid" id="stats"></div>
+    <div class="panel">
+      <h2>Event timeline</h2>
+      <div class="filters">
+        <label>Service:
+          <select id="filter-service"><option value="">All</option></select>
+        </label>
+        <label>Source:
+          <select id="filter-source"><option value="">All</option></select>
+        </label>
+        <label>Severity:
+          <select id="filter-severity">
+            <option value="">All</option>
+            <option value="info">Info</option>
+            <option value="warning">Warning</option>
+            <option value="error">Error</option>
+            <option value="critical">Critical</option>
+          </select>
+        </label>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </main>
+  <footer>
+    WatchTower - AI-native incident response, driven by Claude via MCP.
+    · <a href="https://github.com/Aruthrasathishkumar/Watchtower-MCP-server-for-incident-response" target="_blank">Source on GitHub</a>
+  </footer>
+  <script src="js/timeline.js"></script>
+</body>
+</html>

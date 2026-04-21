@@ -1,0 +1,22 @@
+[project]
+name = "watchtower"
+version = "0.1.0"
+description = "AI-native incident response platform built on the Model Context Protocol."
+readme = "../README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Aruthrasathishkumar" }
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "psycopg[binary]>=3.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["watchtower*"]

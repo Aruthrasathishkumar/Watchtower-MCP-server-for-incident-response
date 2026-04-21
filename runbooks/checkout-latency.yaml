@@ -1,0 +1,46 @@
+# Runbook: checkoutservice latency / error spike
+id: checkout-latency
+description: Diagnose high latency or error rate on checkoutservice
+version: 1
+
+triggers:
+  - signal: log_burst
+    service: checkoutservice
+  - signal: high_latency
+    service: checkoutservice
+
+checks:
+  - id: pod_ready
+    description: Are all checkoutservice pods ready?
+    type: prometheus
+    query: kube_pod_status_ready{namespace="boutique",pod=~"checkoutservice-.*"}
+
+  - id: pod_restarts
+    description: How many times have checkoutservice pods restarted?
+    type: prometheus
+    query: kube_pod_container_status_restarts_total{namespace="boutique",pod=~"checkoutservice-.*"}
+
+  - id: recent_errors
+    description: What errors or warnings has checkoutservice logged recently?
+    type: loki
+    query: '{namespace="boutique",app="checkoutservice"} |~ "(?i)(error|warning|fatal|panic)"'
+    window: 15m
+
+  - id: dependency_errors
+    description: Are upstream dependencies (payment, cart) failing?
+    type: loki
+    query: '{namespace="boutique",app=~"paymentservice|cartservice"} |~ "(?i)(error|fatal)"'
+    window: 10m
+
+remedies:
+  - id: restart_deployment
+    description: Trigger a rolling restart of the checkoutservice deployment
+    requires_approval: true
+    command: kubectl rollout restart deployment/checkoutservice -n boutique
+    safety: disruptive
+
+  - id: scale_up
+    description: Scale checkoutservice from 1 to 3 replicas to absorb load
+    requires_approval: true
+    command: kubectl scale deployment/checkoutservice -n boutique --replicas=3
+    safety: disruptive

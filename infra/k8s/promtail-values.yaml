@@ -1,0 +1,23 @@
+# Promtail configuration for WatchTower's local cluster.
+# DaemonSet that ships pod logs to Loki.
+
+config:
+  clients:
+    - url: http://loki.logging.svc.cluster.local:3100/loki/api/v1/push
+
+  # Use the default Kubernetes scrape config — discovers every pod via the
+  # K8s API, attaches labels (namespace, pod, container, app), and tails
+  # /var/log/pods.
+  snippets:
+    extraScrapeConfigs: ""
+
+serviceMonitor:
+  enabled: false
+
+resources:
+  requests:
+    memory: 64Mi
+    cpu: 50m
+  limits:
+    memory: 256Mi
+    cpu: 200m

@@ -1,0 +1,10 @@
+# Placeholder for future Boutique ServiceMonitors.
+#
+# Google's Online Boutique does not expose Prometheus-compatible /metrics
+# endpoints by default — it uses OpenCensus / OpenTelemetry exporters for
+# Google Cloud Operations. Adding Prometheus instrumentation would require
+# modifying each microservice.
+#
+# For now, WatchTower queries Kubernetes-level metrics via kube-state-metrics
+# and cAdvisor, which ARE scraped by default and provide rich visibility
+# into pod/container state, resource usage, and restart patterns.

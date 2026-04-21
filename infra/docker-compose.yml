@@ -1,0 +1,32 @@
+name: watchtower
+
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg16
+    container_name: watchtower-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: watchtower
+      POSTGRES_PASSWORD: watchtower_dev_password
+      POSTGRES_DB: watchtower
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U watchtower -d watchtower"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - watchtower_net
+
+networks:
+  watchtower_net:
+    name: watchtower_net
+    driver: bridge
+
+volumes:
+  postgres_data:
+    name: watchtower_postgres_data

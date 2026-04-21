@@ -1,0 +1,33 @@
+# Runbook: generic pod crashloop recovery
+id: pod-crashloop
+description: Diagnose and recover a pod stuck in CrashLoopBackOff
+version: 1
+
+triggers:
+  - signal: pod_restart
+  - signal: service_down
+
+checks:
+  - id: current_restarts
+    description: Current restart count for pods in boutique namespace
+    type: prometheus
+    query: kube_pod_container_status_restarts_total{namespace="boutique"}
+
+  - id: pod_phase
+    description: What phase are the pods in?
+    type: prometheus
+    query: kube_pod_status_phase{namespace="boutique"}
+
+  - id: crash_messages
+    description: What error messages appeared just before the last restart?
+    type: loki
+    query: '{namespace="boutique"} |~ "(?i)(panic|fatal|crashloop|oom)"'
+    window: 30m
+
+remedies:
+  - id: force_pod_delete
+    description: Force-delete the crashing pod so the deployment recreates it
+    requires_approval: true
+    # Intentionally parameterless — operator specifies the exact pod name
+    command: kubectl delete pod -n boutique <POD_NAME> --force
+    safety: disruptive

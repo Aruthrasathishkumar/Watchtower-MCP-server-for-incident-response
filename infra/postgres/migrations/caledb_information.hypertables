@@ -1,0 +1,26 @@
+                                   Table "public.events"
+     Column     |           Type           | Collation | Nullable |        Default         
+----------------+--------------------------+-----------+----------+------------------------
+ id             | uuid                     |           | not null | gen_random_uuid()
+ timestamp      | timestamp with time zone |           | not null | 
+ ingested_at    | timestamp with time zone |           | not null | now()
+ event_type     | event_type               |           | not null | 
+ severity       | event_severity           |           | not null | 'info'::event_severity
+ service        | text                     |           |          | 
+ actor          | text                     |           |          | 
+ source_system  | text                     |           | not null | 
+ source_id      | text                     |           | not null | 
+ title          | text                     |           | not null | 
+ payload        | jsonb                    |           | not null | '{}'::jsonb
+ correlation_id | uuid                     |           |          | 
+ embedding      | vector(384)              |           |          | 
+Indexes:
+    "events_pkey" PRIMARY KEY, btree ("timestamp", id)
+    "events_source_system_source_id_timestamp_key" UNIQUE CONSTRAINT, btree (source_system, source_id, "timestamp")
+    "events_timestamp_idx" btree ("timestamp" DESC)
+    "idx_events_correlation" btree (correlation_id) WHERE correlation_id IS NOT NULL
+    "idx_events_embedding" hnsw (embedding vector_cosine_ops) WITH (m='16', ef_construction='64')
+    "idx_events_payload" gin (payload)
+    "idx_events_service_time" btree (service, "timestamp" DESC) WHERE service IS NOT NULL
+    "idx_events_type_time" btree (event_type, "timestamp" DESC)
+

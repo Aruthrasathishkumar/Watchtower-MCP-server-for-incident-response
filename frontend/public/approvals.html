@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WatchTower - Approvals</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">WatchTower</a></h1>
+    <nav>
+      <a href="index.html">Timeline</a>
+      <a href="approvals.html" class="active">Approvals</a>
+      <a href="https://github.com/Aruthrasathishkumar/Watchtower-MCP-server-for-incident-response" target="_blank">GitHub</a>
+    </nav>
+  </header>
+  <main>
+    <div class="panel">
+      <h2>About the approval flow</h2>
+      <div class="kv-list" style="padding: 16px 20px;">
+        <p style="margin: 0; font-size: 13px; color: var(--text-dim);">
+          Claude proposes remediations via <code>request_approval</code>. The operator
+          reviews and approves via the CLI, which emits an HMAC-signed token. The operator
+          pastes the token back; Claude then calls <code>execute_approved_remedy</code>.
+          This page shows approval requests and the audit log of every attempt.
+        </p>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Approval requests</h2>
+      <div id="approvals-list"></div>
+    </div>
+    <div class="panel">
+      <h2>Audit log</h2>
+      <div id="audit-list"></div>
+    </div>
+  </main>
+  <footer>
+    WatchTower - AI-native incident response, driven by Claude via MCP.
+  </footer>
+  <script src="js/approvals.js"></script>
+</body>
+</html>

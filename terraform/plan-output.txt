@@ -1,0 +1,333 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # docker_container.postgres will be created
+  + resource "docker_container" "postgres" {
+      + attach                                      = false
+      + bridge                                      = (known after apply)
+      + command                                     = (known after apply)
+      + container_logs                              = (known after apply)
+      + container_read_refresh_timeout_milliseconds = 15000
+      + entrypoint                                  = (known after apply)
+      + env                                         = (sensitive value)
+      + exit_code                                   = (known after apply)
+      + hostname                                    = (known after apply)
+      + id                                          = (known after apply)
+      + image                                       = (known after apply)
+      + init                                        = (known after apply)
+      + ipc_mode                                    = (known after apply)
+      + log_driver                                  = (known after apply)
+      + logs                                        = false
+      + memory_reservation                          = 0
+      + must_run                                    = true
+      + name                                        = "watchtower-postgres"
+      + network_data                                = (known after apply)
+      + network_mode                                = "bridge"
+      + read_only                                   = false
+      + remove_volumes                              = true
+      + restart                                     = "unless-stopped"
+      + rm                                          = false
+      + runtime                                     = (known after apply)
+      + security_opts                               = (known after apply)
+      + shm_size                                    = (known after apply)
+      + start                                       = true
+      + stdin_open                                  = false
+      + stop_signal                                 = (known after apply)
+      + stop_timeout                                = (known after apply)
+      + tty                                         = false
+      + wait                                        = false
+      + wait_timeout                                = 60
+
+      + healthcheck {
+          + interval       = "5s"
+          + retries        = 5
+          + start_interval = "0s"
+          + start_period   = "10s"
+          + test           = [
+              + "CMD-SHELL",
+              + "pg_isready -U watchtower -d watchtower",
+            ]
+          + timeout        = "3s"
+        }
+
+      + labels (known after apply)
+
+      + ports {
+          + external = 5432
+          + internal = 5432
+          + ip       = "0.0.0.0"
+          + protocol = "tcp"
+        }
+
+      + volumes {
+          + container_path = "/home/postgres/pgdata/data"
+          + volume_name    = "watchtower_postgres_data"
+            # (2 unchanged attributes hidden)
+        }
+    }
+
+  # docker_image.postgres will be created
+  + resource "docker_image" "postgres" {
+      + id           = (known after apply)
+      + image_id     = (known after apply)
+      + keep_locally = true
+      + name         = "timescale/timescaledb-ha:pg16"
+      + repo_digest  = (known after apply)
+    }
+
+  # docker_volume.postgres_data will be created
+  + resource "docker_volume" "postgres_data" {
+      + driver     = (known after apply)
+      + id         = (known after apply)
+      + mountpoint = (known after apply)
+      + name       = "watchtower_postgres_data"
+    }
+
+  # helm_release.loki will be created
+  + resource "helm_release" "loki" {
+      + atomic                     = false
+      + chart                      = "loki"
+      + cleanup_on_fail            = false
+      + create_namespace           = false
+      + dependency_update          = false
+      + disable_crd_hooks          = false
+      + disable_openapi_validation = false
+      + disable_webhooks           = false
+      + force_update               = false
+      + id                         = (known after apply)
+      + lint                       = false
+      + manifest                   = (known after apply)
+      + max_history                = 0
+      + metadata                   = (known after apply)
+      + name                       = "loki"
+      + namespace                  = "logging"
+      + pass_credentials           = false
+      + recreate_pods              = false
+      + render_subchart_notes      = true
+      + replace                    = false
+      + repository                 = "https://grafana.github.io/helm-charts"
+      + reset_values               = false
+      + reuse_values               = false
+      + skip_crds                  = false
+      + status                     = "deployed"
+      + timeout                    = 600
+      + values                     = [
+          + <<-EOT
+                "backend":
+                  "replicas": 0
+                "chunksCache":
+                  "enabled": false
+                "deploymentMode": "SingleBinary"
+                "gateway":
+                  "enabled": false
+                "loki":
+                  "auth_enabled": false
+                  "commonConfig":
+                    "replication_factor": 1
+                  "limits_config":
+                    "allow_structured_metadata": true
+                    "retention_period": "72h"
+                    "volume_enabled": true
+                  "schemaConfig":
+                    "configs":
+                    - "from": "2024-01-01"
+                      "index":
+                        "period": "24h"
+                        "prefix": "loki_index_"
+                      "object_store": "filesystem"
+                      "schema": "v13"
+                      "store": "tsdb"
+                  "storage":
+                    "type": "filesystem"
+                "monitoring":
+                  "lokiCanary":
+                    "enabled": false
+                  "selfMonitoring":
+                    "enabled": false
+                    "grafanaAgent":
+                      "installOperator": false
+                  "serviceMonitor":
+                    "enabled": false
+                "read":
+                  "replicas": 0
+                "resultsCache":
+                  "enabled": false
+                "singleBinary":
+                  "persistence":
+                    "enabled": true
+                    "size": "5Gi"
+                  "replicas": 1
+                "test":
+                  "enabled": false
+                "write":
+                  "replicas": 0
+            EOT,
+        ]
+      + verify                     = false
+      + version                    = "6.55.0"
+      + wait                       = true
+      + wait_for_jobs              = false
+    }
+
+  # helm_release.prometheus will be created
+  + resource "helm_release" "prometheus" {
+      + atomic                     = false
+      + chart                      = "kube-prometheus-stack"
+      + cleanup_on_fail            = false
+      + create_namespace           = false
+      + dependency_update          = false
+      + disable_crd_hooks          = false
+      + disable_openapi_validation = false
+      + disable_webhooks           = false
+      + force_update               = false
+      + id                         = (known after apply)
+      + lint                       = false
+      + manifest                   = (known after apply)
+      + max_history                = 0
+      + metadata                   = (known after apply)
+      + name                       = "prometheus"
+      + namespace                  = "monitoring"
+      + pass_credentials           = false
+      + recreate_pods              = false
+      + render_subchart_notes      = true
+      + replace                    = false
+      + repository                 = "https://prometheus-community.github.io/helm-charts"
+      + reset_values               = false
+      + reuse_values               = false
+      + skip_crds                  = false
+      + status                     = "deployed"
+      + timeout                    = 600
+      + values                     = [
+          + <<-EOT
+                "alertmanager":
+                  "enabled": false
+                "grafana":
+                  "enabled": false
+                "prometheus":
+                  "prometheusSpec":
+                    "resources":
+                      "limits":
+                        "cpu": "500m"
+                        "memory": "1Gi"
+                      "requests":
+                        "cpu": "100m"
+                        "memory": "400Mi"
+                    "retention": "1d"
+            EOT,
+        ]
+      + verify                     = false
+      + version                    = "56.0.5"
+      + wait                       = true
+      + wait_for_jobs              = false
+    }
+
+  # helm_release.promtail will be created
+  + resource "helm_release" "promtail" {
+      + atomic                     = false
+      + chart                      = "promtail"
+      + cleanup_on_fail            = false
+      + create_namespace           = false
+      + dependency_update          = false
+      + disable_crd_hooks          = false
+      + disable_openapi_validation = false
+      + disable_webhooks           = false
+      + force_update               = false
+      + id                         = (known after apply)
+      + lint                       = false
+      + manifest                   = (known after apply)
+      + max_history                = 0
+      + metadata                   = (known after apply)
+      + name                       = "promtail"
+      + namespace                  = "logging"
+      + pass_credentials           = false
+      + recreate_pods              = false
+      + render_subchart_notes      = true
+      + replace                    = false
+      + repository                 = "https://grafana.github.io/helm-charts"
+      + reset_values               = false
+      + reuse_values               = false
+      + skip_crds                  = false
+      + status                     = "deployed"
+      + timeout                    = 300
+      + values                     = [
+          + <<-EOT
+                "config":
+                  "clients":
+                  - "url": "http://loki.logging.svc.cluster.local:3100/loki/api/v1/push"
+                "serviceMonitor":
+                  "enabled": false
+            EOT,
+        ]
+      + verify                     = false
+      + version                    = "6.17.1"
+      + wait                       = true
+      + wait_for_jobs              = false
+    }
+
+  # kubernetes_namespace.boutique will be created
+  + resource "kubernetes_namespace" "boutique" {
+      + id                               = (known after apply)
+      + wait_for_default_service_account = false
+
+      + metadata {
+          + generation       = (known after apply)
+          + labels           = {
+              + "component"  = "boutique-demo"
+              + "managed_by" = "terraform"
+            }
+          + name             = "boutique"
+          + resource_version = (known after apply)
+          + uid              = (known after apply)
+        }
+    }
+
+  # kubernetes_namespace.logging will be created
+  + resource "kubernetes_namespace" "logging" {
+      + id                               = (known after apply)
+      + wait_for_default_service_account = false
+
+      + metadata {
+          + generation       = (known after apply)
+          + labels           = {
+              + "component"  = "observability"
+              + "managed_by" = "terraform"
+            }
+          + name             = "logging"
+          + resource_version = (known after apply)
+          + uid              = (known after apply)
+        }
+    }
+
+  # kubernetes_namespace.monitoring will be created
+  + resource "kubernetes_namespace" "monitoring" {
+      + id                               = (known after apply)
+      + wait_for_default_service_account = false
+
+      + metadata {
+          + generation       = (known after apply)
+          + labels           = {
+              + "component"  = "observability"
+              + "managed_by" = "terraform"
+            }
+          + name             = "monitoring"
+          + resource_version = (known after apply)
+          + uid              = (known after apply)
+        }
+    }
+
+Plan: 9 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + loki_port_forward_command       = "kubectl port-forward -n logging svc/loki 3100:3100"
+  + namespaces                      = [
+      + "boutique",
+      + "monitoring",
+      + "logging",
+    ]
+  + postgres_connection_string      = (sensitive value)
+  + postgres_host_port              = 5432
+  + prometheus_port_forward_command = "kubectl port-forward -n monitoring svc/prometheus-kube-prometheus-prometheus 9090:9090"

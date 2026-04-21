@@ -1,0 +1,6 @@
+# Copy this file to terraform.tfvars and customize.
+# terraform.tfvars is gitignored.
+
+# postgres_password = "pick-your-own"
+# postgres_port     = 5432
+# kube_context      = "watchtower"

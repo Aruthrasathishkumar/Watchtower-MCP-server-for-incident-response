@@ -1,0 +1,145 @@
+[
+  {
+    "id": "cf4d23da-2ab5-45a3-bca3-2522d3d38a7c",
+    "proposal_id": "3bcaedd3-c8e0-46f8-8e8b-44556d12c4e9",
+    "action": "executed",
+    "actor": "claude",
+    "token_nonce": "e0b6f3ff3ef3eb1feeb267f6d18086fa",
+    "stdout": "deployment.apps/checkoutservice restarted\n",
+    "stderr": "",
+    "exit_code": 0,
+    "at": "2026-04-21T00:34:30.248113+00:00"
+  },
+  {
+    "id": "ceb40f73-072e-4510-8ab4-55557d55f374",
+    "proposal_id": "3bcaedd3-c8e0-46f8-8e8b-44556d12c4e9",
+    "action": "approved",
+    "actor": "asathish",
+    "token_nonce": "e0b6f3ff3ef3eb1feeb267f6d18086fa",
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:33:20.902016+00:00"
+  },
+  {
+    "id": "37b1205d-d80e-42c5-9170-49c0acb9670e",
+    "proposal_id": "3bcaedd3-c8e0-46f8-8e8b-44556d12c4e9",
+    "action": "requested",
+    "actor": "claude",
+    "token_nonce": null,
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:32:37.790852+00:00"
+  },
+  {
+    "id": "ba5f156c-ab93-4d5c-b2ac-de7bff931488",
+    "proposal_id": "4e21a30e-2683-4e36-8921-dbad05de0661",
+    "action": "replay_attempt",
+    "actor": "claude",
+    "token_nonce": "a16c1e1f824b5700c5ff9d133d518987",
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:16:03.616879+00:00"
+  },
+  {
+    "id": "200fdfb7-bdbd-44f1-a805-888f2c7fdecd",
+    "proposal_id": "4e21a30e-2683-4e36-8921-dbad05de0661",
+    "action": "replay_attempt",
+    "actor": "claude",
+    "token_nonce": "a16c1e1f824b5700c5ff9d133d518987",
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:13:03.725420+00:00"
+  },
+  {
+    "id": "6f2092c9-d70e-4d45-af21-647995a8239c",
+    "proposal_id": "4e21a30e-2683-4e36-8921-dbad05de0661",
+    "action": "executed",
+    "actor": "claude",
+    "token_nonce": "a16c1e1f824b5700c5ff9d133d518987",
+    "stdout": "(no-op remedy \u2014 no command to execute)",
+    "stderr": "",
+    "exit_code": 0,
+    "at": "2026-04-21T00:12:50.011514+00:00"
+  },
+  {
+    "id": "9a66b531-0daa-4775-835e-f3e7102eee49",
+    "proposal_id": "4e21a30e-2683-4e36-8921-dbad05de0661",
+    "action": "approved",
+    "actor": "asathish",
+    "token_nonce": "a16c1e1f824b5700c5ff9d133d518987",
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:12:06.758677+00:00"
+  },
+  {
+    "id": "c5af26f5-c27c-43ab-be15-8299924600e7",
+    "proposal_id": "4e21a30e-2683-4e36-8921-dbad05de0661",
+    "action": "requested",
+    "actor": "claude",
+    "token_nonce": null,
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:11:48.790980+00:00"
+  },
+  {
+    "id": "fe41217f-a804-4fd8-9aa1-83f2498a74d7",
+    "proposal_id": null,
+    "action": "invalid_token",
+    "actor": "claude",
+    "token_nonce": null,
+    "stdout": null,
+    "stderr": "Token expired at 1776730239 (now 1776730286).",
+    "exit_code": null,
+    "at": "2026-04-21T00:11:26.216716+00:00"
+  },
+  {
+    "id": "dcd28f2c-2568-4c18-824b-20cfe64a0fc6",
+    "proposal_id": "7106806f-e7a3-4988-978e-65f246e3574f",
+    "action": "approved",
+    "actor": "asathish",
+    "token_nonce": "bd04a4e5d9eee766c15d867252e99372",
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:05:39.661027+00:00"
+  },
+  {
+    "id": "7252c7cf-2a10-4849-8cf3-e5ef01088840",
+    "proposal_id": "7106806f-e7a3-4988-978e-65f246e3574f",
+    "action": "requested",
+    "actor": "claude",
+    "token_nonce": null,
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:05:05.245354+00:00"
+  },
+  {
+    "id": "fc7999b5-64ca-44ab-ad01-6b272a46a9d4",
+    "proposal_id": "af7c4018-95e1-4f65-ad83-ce58c22878d6",
+    "action": "approved",
+    "actor": "aruthra",
+    "token_nonce": "d03262fff4251633c8f25066aeb21183",
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:01:22.187172+00:00"
+  },
+  {
+    "id": "3f809058-1758-463f-bd74-f0020fe496f9",
+    "proposal_id": "af7c4018-95e1-4f65-ad83-ce58c22878d6",
+    "action": "requested",
+    "actor": "claude",
+    "token_nonce": null,
+    "stdout": null,
+    "stderr": null,
+    "exit_code": null,
+    "at": "2026-04-21T00:01:22.142289+00:00"
+  }
+]

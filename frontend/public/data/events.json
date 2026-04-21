@@ -1,0 +1,4420 @@
+[
+  {
+    "id": "6410521a-6c99-4a28-a188-fc8452cac763",
+    "timestamp": "2026-04-21T01:51:37+00:00",
+    "event_type": "incident_resolved",
+    "severity": "error",
+    "service": null,
+    "actor": "boutique-checkoutservice",
+    "source_system": "pagerduty",
+    "source_id": "Q2PZPWXS1CBL6C",
+    "title": "test incident that will be resolved",
+    "payload": {
+      "status": "resolved",
+      "urgency": "high",
+      "html_url": "https://georgemason.pagerduty.com/incidents/Q2PZPWXS1CBL6C",
+      "service_id": "PZY6QO5",
+      "assignments": [],
+      "service_name": "boutique-checkoutservice",
+      "incident_number": 4
+    }
+  },
+  {
+    "id": "6ed76724-8cc9-409c-9150-c87f37cc0a4f",
+    "timestamp": "2026-04-21T01:50:40+00:00",
+    "event_type": "incident_open",
+    "severity": "error",
+    "service": "cartservice",
+    "actor": "boutique-checkoutservice",
+    "source_system": "pagerduty",
+    "source_id": "Q3116BSYD8UG55",
+    "title": "cartservice pod restart",
+    "payload": {
+      "status": "triggered",
+      "urgency": "high",
+      "html_url": "https://georgemason.pagerduty.com/incidents/Q3116BSYD8UG55",
+      "service_id": "PZY6QO5",
+      "assignments": [
+        "Aruthra Sathish Kumar"
+      ],
+      "service_name": "boutique-checkoutservice",
+      "incident_number": 3
+    }
+  },
+  {
+    "id": "07fb61fb-c9d7-443e-b785-c0478038ee4f",
+    "timestamp": "2026-04-21T01:49:53+00:00",
+    "event_type": "incident_open",
+    "severity": "error",
+    "service": "paymentservice",
+    "actor": "boutique-checkoutservice",
+    "source_system": "pagerduty",
+    "source_id": "Q217MELUQ28DI1",
+    "title": "paymentservice p99 latency spike",
+    "payload": {
+      "status": "triggered",
+      "urgency": "high",
+      "html_url": "https://georgemason.pagerduty.com/incidents/Q217MELUQ28DI1",
+      "service_id": "PZY6QO5",
+      "assignments": [
+        "Aruthra Sathish Kumar"
+      ],
+      "service_name": "boutique-checkoutservice",
+      "incident_number": 2
+    }
+  },
+  {
+    "id": "952cc1f4-c647-48ef-b2bc-0de4e5ddf5a6",
+    "timestamp": "2026-04-21T01:48:24+00:00",
+    "event_type": "incident_open",
+    "severity": "error",
+    "service": "checkoutservice",
+    "actor": "boutique-checkoutservice",
+    "source_system": "pagerduty",
+    "source_id": "Q2WI3WKBJFXGK6",
+    "title": "checkoutservice elevated error rate",
+    "payload": {
+      "status": "triggered",
+      "urgency": "high",
+      "html_url": "https://georgemason.pagerduty.com/incidents/Q2WI3WKBJFXGK6",
+      "service_id": "PZY6QO5",
+      "assignments": [
+        "Aruthra Sathish Kumar"
+      ],
+      "service_name": "boutique-checkoutservice",
+      "incident_number": 1
+    }
+  },
+  {
+    "id": "f80fccaa-0208-4ad4-837d-6d1d026f95bc",
+    "timestamp": "2026-04-21T01:18:48.995479+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734328.995479",
+    "title": "Seeing elevated 500s on checkoutservice starting ~10 min ago",
+    "payload": {
+      "ts": "1776734328.995479",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "Seeing elevated 500s on checkoutservice starting ~10 min ago\n<!here> anyone on call? Pager just went off for boutique/paymentservice\nRolling back the 14:30 deploy \u2014 it was the cause\nConfirmed: reverting the payment API timeout change fixed it\nPostmortem doc here: [link]",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "94827edb-2bb6-4179-8fa4-c13e1942e260",
+    "timestamp": "2026-04-21T01:18:45.124279+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734325.124279",
+    "title": "Seeing elevated 500s on checkoutservice starting ~10 min ago",
+    "payload": {
+      "ts": "1776734325.124279",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "Seeing elevated 500s on checkoutservice starting ~10 min ago\n<!here> anyone on call? Pager just went off for boutique/paymentservice\nRolling back the 14:30 deploy \u2014 it was the cause\nConfirmed: reverting the payment API timeout change fixed it\nPostmortem doc here: [link]",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "0113ffde-e4de-4cf6-9f2a-36b22bf95cee",
+    "timestamp": "2026-04-21T01:18:44.000759+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734324.000759",
+    "title": "Seeing elevated 500s on checkoutservice starting ~10 min ago",
+    "payload": {
+      "ts": "1776734324.000759",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "Seeing elevated 500s on checkoutservice starting ~10 min ago\n<!here> anyone on call? Pager just went off for boutique/paymentservice\nRolling back the 14:30 deploy \u2014 it was the cause\nConfirmed: reverting the payment API timeout change fixed it\nPostmortem doc here: [link]",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "9697353b-521e-45e8-b044-ba0132308857",
+    "timestamp": "2026-04-21T01:18:42.552269+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734322.552269",
+    "title": "Seeing elevated 500s on checkoutservice starting ~10 min ago",
+    "payload": {
+      "ts": "1776734322.552269",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "Seeing elevated 500s on checkoutservice starting ~10 min ago\n<!here> anyone on call? Pager just went off for boutique/paymentservice\nRolling back the 14:30 deploy \u2014 it was the cause\nConfirmed: reverting the payment API timeout change fixed it\nPostmortem doc here: [link]",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "928bb90d-fb3d-4bbe-90fe-ad7c647a351a",
+    "timestamp": "2026-04-21T01:18:40.633969+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734320.633969",
+    "title": "Seeing elevated 500s on checkoutservice starting ~10 min ago",
+    "payload": {
+      "ts": "1776734320.633969",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "Seeing elevated 500s on checkoutservice starting ~10 min ago\n<!here> anyone on call? Pager just went off for boutique/paymentservice\nRolling back the 14:30 deploy \u2014 it was the cause\nConfirmed: reverting the payment API timeout change fixed it\nPostmortem doc here: [link]",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "24e31a50-12eb-4ff1-9578-70096c14f437",
+    "timestamp": "2026-04-21T01:18:10.624339+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734290.624339",
+    "title": "Seeing elevated 500s on checkoutservice starting ~10 min ago",
+    "payload": {
+      "ts": "1776734290.624339",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "Seeing elevated 500s on checkoutservice starting ~10 min ago\n<!here> anyone on call? Pager just went off for boutique/paymentservice\nRolling back the 14:30 deploy \u2014 it was the cause\nConfirmed: reverting the payment API timeout change fixed it\nPostmortem doc here: [link]",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "31055071-92b3-48fd-8ffc-5c8d4a4d192d",
+    "timestamp": "2026-04-21T01:17:19.712679+00:00",
+    "event_type": "slack_msg",
+    "severity": "info",
+    "service": null,
+    "actor": "WatchTower Collector",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776734239.712679",
+    "title": "<@U0AU494S1D4> has joined the channel",
+    "payload": {
+      "ts": "1776734239.712679",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0AU494S1D4",
+      "full_text": "<@U0AU494S1D4> has joined the channel",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "23b6439d-60bf-4c02-b2ab-c863778732b7",
+    "timestamp": "2026-04-21T00:56:26.199639+00:00",
+    "event_type": "slack_msg",
+    "severity": "warning",
+    "service": null,
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776732986.199639",
+    "title": "has renamed the channel from \u2018new-channel\u2019 to \u2018incidents\u2019",
+    "payload": {
+      "ts": "1776732986.199639",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "has renamed the channel from \u2018new-channel\u2019 to \u2018incidents\u2019",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "f261a9ac-d9ea-4e69-b3f5-a5e46ede8928",
+    "timestamp": "2026-04-21T00:53:33.919399+00:00",
+    "event_type": "slack_msg",
+    "severity": "info",
+    "service": null,
+    "actor": "dezire 0099",
+    "source_system": "slack",
+    "source_id": "C0AV0H3KVME:1776732813.919399",
+    "title": "<@U0ATQR4M5LP> has joined the channel",
+    "payload": {
+      "ts": "1776732813.919399",
+      "channel": "C0AV0H3KVME",
+      "user_id": "U0ATQR4M5LP",
+      "full_text": "<@U0ATQR4M5LP> has joined the channel",
+      "reactions": [],
+      "thread_ts": null
+    }
+  },
+  {
+    "id": "3a06d13c-f9db-4bc5-8975-b22298e8e6ef",
+    "timestamp": "2026-04-20T17:35:25+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "73737d2d-3e76-421e-b7ae-adcd5b2d8b7e",
+    "title": "Scheduled: Pod/frontend-849f6b48f8-hft9g",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/frontend-849f6b48f8-hft9g to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:35:25+00:00",
+      "first_seen": "2026-04-20T17:35:25+00:00",
+      "involved_object": {
+        "uid": "43d1c7e4-e2b9-4301-8485-a52ec7800742",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-hft9g",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "21cbc9cf-3dc4-497d-86f1-732a7ea196b9",
+    "timestamp": "2026-04-20T17:35:25+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "d63ac0ff-45a0-4976-8e4c-644c057c3e20",
+    "title": "Killing: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Killing",
+      "message": "Stopping container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:35:25+00:00",
+      "first_seen": "2026-04-20T17:35:25+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "0145373f-4fd9-4423-a730-aa502210132c",
+    "timestamp": "2026-04-20T17:35:25+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "814d611f-e3ee-4f20-9055-048896c6c025",
+    "title": "SuccessfulCreate: ReplicaSet/frontend-849f6b48f8",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: frontend-849f6b48f8-hft9g",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:35:25+00:00",
+      "first_seen": "2026-04-20T17:35:25+00:00",
+      "involved_object": {
+        "uid": "0a9300cd-06de-495b-b58a-601eaeb8862b",
+        "kind": "ReplicaSet",
+        "name": "frontend-849f6b48f8",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "581e29aa-4ad2-42f0-8126-5e8da5f54d71",
+    "timestamp": "2026-04-20T17:35:24+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "9da7b9b3-96ce-4d16-85b2-9c91ab81beec",
+    "title": "Created: Pod/frontend-849f6b48f8-hft9g",
+    "payload": {
+      "count": 1,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:35:24+00:00",
+      "first_seen": "2026-04-20T17:35:24+00:00",
+      "involved_object": {
+        "uid": "43d1c7e4-e2b9-4301-8485-a52ec7800742",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-hft9g",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "2c36d90a-8985-4b69-9570-271441e99352",
+    "timestamp": "2026-04-20T17:35:24+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "7c833d47-9872-4552-8d30-b80a50f9254d",
+    "title": "Started: Pod/frontend-849f6b48f8-hft9g",
+    "payload": {
+      "count": 1,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:35:24+00:00",
+      "first_seen": "2026-04-20T17:35:24+00:00",
+      "involved_object": {
+        "uid": "43d1c7e4-e2b9-4301-8485-a52ec7800742",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-hft9g",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "60cb1df3-b58b-4786-b55b-6f5e59772266",
+    "timestamp": "2026-04-20T17:35:24+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "aaf92bdd-cb3d-4c6b-a99d-1c510b7a4624",
+    "title": "Pulled: Pod/frontend-849f6b48f8-hft9g",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:35:24+00:00",
+      "first_seen": "2026-04-20T17:35:24+00:00",
+      "involved_object": {
+        "uid": "43d1c7e4-e2b9-4301-8485-a52ec7800742",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-hft9g",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "14bfb741-6c1b-43f6-a215-7c8f76071a69",
+    "timestamp": "2026-04-20T17:25:57+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "05815487-bedd-4d7b-82d8-78dc4a4e801e",
+    "title": "Started: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container main",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:57+00:00",
+      "first_seen": "2026-04-20T17:10:04+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "3cfc77e8-7720-41b1-8241-e59ad4c12434",
+    "timestamp": "2026-04-20T17:25:57+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "628ea304-a2e9-4512-b401-43d2b89ae63b",
+    "title": "Created: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container main",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:57+00:00",
+      "first_seen": "2026-04-20T17:10:04+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "d54b61a7-6173-44b5-8c96-4230ae207db6",
+    "timestamp": "2026-04-20T17:25:57+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "dfe1f9d8-42e5-467d-bc59-05e5d7b21b2a",
+    "title": "Pulled: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:57+00:00",
+      "first_seen": "2026-04-20T17:25:57+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "c57d3bbe-7598-4f5f-bdbe-6d71d819d228",
+    "timestamp": "2026-04-20T17:25:35+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "727e45f9-3ba4-4c8e-8ef1-7b4086fb5822",
+    "title": "Unhealthy: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 4,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.22:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:35+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b35c5c8e-c2f0-4d55-a9a4-9fe648559ec2",
+    "timestamp": "2026-04-20T17:25:35+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "9af84e99-b60f-4a4e-a143-999104af668e",
+    "title": "Unhealthy: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.22:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:35+00:00",
+      "first_seen": "2026-04-20T17:25:35+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "283ebcf2-9164-4223-9efb-1fbb9b13c502",
+    "timestamp": "2026-04-20T17:25:32+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "f37982eb-8ffc-4376-b6ca-1e8d0aa53f4f",
+    "title": "Unhealthy: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 2,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.31:7000\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:32+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "48d881b7-d702-4123-a61b-8a9775b49077",
+    "timestamp": "2026-04-20T17:25:32+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "9310de07-fc32-4a8d-bd5c-40ba70cb2f79",
+    "title": "Unhealthy: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 3,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.29:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:32+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b126f67e-dd5f-4417-bbe5-24b6d0263435",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "02d2fe95-e38a-46fb-b8b9-3efafd774706",
+    "title": "Started: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:17+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "cece327e-855b-47fc-90f4-8139baf5ceba",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "68b7157a-3f94-4830-82aa-4d2caaa2b363",
+    "title": "Pulled: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "27f37311-d01e-4014-b1ae-6ed7ded0af4b",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "00dd5a7a-314f-4db1-a650-8e030c7c6274",
+    "title": "Created: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:05+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "558214e4-d161-4a93-907f-94ca57391927",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "b51b317c-6d55-46d7-9c67-d0a87c1bb289",
+    "title": "Started: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:05+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "19820cf7-4a88-40c6-9af7-4ac1c64431df",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "ee16f6a3-f962-4f11-b93b-2077d1c79470",
+    "title": "Pulled: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/currencyservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "fb29c237-c80d-4301-8c15-6104a7ef426d",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "e4f6c593-283f-4860-8f35-15a517f0a892",
+    "title": "Created: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:40+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "93bf8fb5-386a-4bbb-ac44-3bc0b8b23a58",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "42ce8c5e-f2c5-4891-84f5-e2ba394837d6",
+    "title": "Started: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:40+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "dccb7a3e-f112-4112-85b4-db0dcdfb228e",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "c1a1c7d4-432b-4d0e-accd-d5a7e126a65b",
+    "title": "Created: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container frontend-check",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:06+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "7f5c3aac-4c79-4442-8a92-c454d62670e4",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "80d86cb3-ca03-4863-831e-7f783406e84e",
+    "title": "Started: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container frontend-check",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:06+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "6626d9cb-2fb5-4a6a-89e0-f0942d2fb4bb",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "d29c3604-0b34-4f1d-8f75-2b67af9501f9",
+    "title": "Pulled: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"busybox:latest\" in 438ms (438ms including waiting). Image size: 4421262 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "48c17fe9-5611-44e3-8c9c-9fa8a1304316",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "4c44639b-5165-4444-88dd-1c8544ce6917",
+    "title": "Started: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:13+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a8d67f13-a9c0-4d6d-8cd5-b88fbaacbb95",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "dced45d6-587b-49cc-9a9d-fea2b8a1706a",
+    "title": "Created: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:42+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "32768160-10dd-4a8a-aae0-20fb28876fa1",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "235eee5f-71e8-4dde-afb8-81845605aef8",
+    "title": "Started: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:42+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "67466c03-b44f-4680-9c4c-e699bf0bfc67",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "5b90dfb4-e59a-4f27-8fc7-b2b339ca3315",
+    "title": "Pulled: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/recommendationservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b13ee8ea-b614-41ae-8514-227f2e782a87",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "c7407b21-ec6e-4a49-9a5f-f8f990ff1ceb",
+    "title": "Unhealthy: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.29:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "ef5d0e9c-3c10-4123-a4da-beba4fc980f7",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "4ea81246-6ad2-45c8-ada1-baba9c7b9e75",
+    "title": "Started: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container redis",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:22+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "9446ea3f-3bdf-440f-bba5-802c0ed28acf",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6c5be920-fa57-4bdb-968c-79307a9d70e4",
+    "title": "Created: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:15+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "e656dcff-23ba-4c3d-84e5-9f2ab636965a",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "5474fff7-6e6f-4337-9723-7cbf928cc1a9",
+    "title": "Started: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:15+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "efe2f248-dcfb-48b8-b181-caf40c76e41c",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "3c01c65d-e424-46a1-8df0-9f824b28e60b",
+    "title": "Pulled: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f6f9223c-f080-4d15-8751-0d788320bff7",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1d030e13-03d2-49d1-a3f2-d339f4276780",
+    "title": "Created: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:17+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "3ef54bbe-651e-42da-b054-c55d37042139",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "160deca6-332c-451e-990d-67f25cc0a4cd",
+    "title": "Pulled: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "57c55eea-5280-4409-818b-ab46b9dd64b3",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "e8548b60-25dd-460d-a16b-a8e083c8e9a2",
+    "title": "Created: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:09:13+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f8551fc4-3af8-4f39-aedc-63e6915f7800",
+    "timestamp": "2026-04-20T17:25:30+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "8467f8e0-3339-44cb-8119-055ce9fbd0a3",
+    "title": "Pulled: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:30+00:00",
+      "first_seen": "2026-04-20T17:25:30+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b4630c21-0d3a-451d-954e-70db7aa0e097",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "e2bcefb2-c71a-493b-b4a8-2a0c297aa3fb",
+    "title": "Started: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:51+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "275cd8c0-eac5-4d57-9fee-91d21e475b4d",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "62637fc2-f52b-4e1a-8dd3-480b118a8986",
+    "title": "Pulled: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:25:29+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "85fe2332-b465-4a0c-9d31-0026aea3ba30",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "3508d8e1-7f69-441d-a3b2-91a9ccc6b9c6",
+    "title": "Pulled: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/cartservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:25:29+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f5099263-acdb-41e2-adc4-794030cfa93c",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "8e221631-63f1-4d32-bc94-8143c6c4a6a1",
+    "title": "Created: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:28+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "c42c9fdd-d3f9-4ea7-a876-9a3d54c52b7b",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1919e7e7-b278-404a-83cb-0991da5ccc09",
+    "title": "Started: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:28+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b7c1b1e6-88c0-4d3d-b043-6035f04fdd23",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "7513fc58-e70d-4793-80ce-8b817f382ae7",
+    "title": "Pulled: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:25:29+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "87fd632b-6fc0-4bb4-a329-482ee72478c8",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "08e2f252-75c5-4b42-a9be-6c037fc390d4",
+    "title": "SandboxChanged: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 2,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:25:26+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "7f7200b9-74b8-45f2-a626-77efc9530e0b",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6a1c7eb5-15f9-4fd8-b335-cdb83e152543",
+    "title": "Pulling: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 2,
+      "reason": "Pulling",
+      "message": "Pulling image \"busybox:latest\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "1883f7e2-b6cd-4b44-9318-e092fab267dc",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "03ccf70e-5ffc-41be-b921-12b5e5dd1f7c",
+    "title": "Created: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:37+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f59b9d89-3f9c-47b7-b8c0-e2cdf470135a",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "48a6d0bd-ddab-44fb-b38e-699449cca6d0",
+    "title": "Started: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:37+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "82ede068-b364-40cc-ab62-4373c2083a01",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1f58bebf-56bf-41b6-b501-230ea9262c2e",
+    "title": "Pulled: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice:v0.10.5\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:25:29+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "745db6ab-90eb-4574-a68b-ba28f10f98bc",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "10d43097-ebc3-4764-a535-995067206726",
+    "title": "Created: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container redis",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:22+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "673038a9-902d-4d76-ad04-d876c26d98ff",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "ed64ad47-67e7-4b9b-aab7-730315e1ce26",
+    "title": "Pulled: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Container image \"redis:alpine\" already present on machine",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:25:29+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "156d2a9f-653e-4f32-b1d2-5593cfd5d88d",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "302325a6-bd02-4a17-8b33-cf6d08757b26",
+    "title": "Created: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:51+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a5dbf9b3-0c02-438a-bf63-042559bdc387",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "253c7f0b-bd30-451e-963f-f1123695ed76",
+    "title": "Created: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 2,
+      "reason": "Created",
+      "message": "Created container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:20+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f342de8c-8c34-4940-9767-09e4dc00d849",
+    "timestamp": "2026-04-20T17:25:29+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "36d4979e-ce6a-4490-892e-cb4019752d45",
+    "title": "Started: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 2,
+      "reason": "Started",
+      "message": "Started container server",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:29+00:00",
+      "first_seen": "2026-04-20T17:09:20+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "fef8963a-41df-4f03-9389-88ae112be35e",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "2e51040c-a92e-49af-8ef9-77a80a25ec9e",
+    "title": "SandboxChanged: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "6d4650c1-9972-42ec-8bc8-37d7f7890e52",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "182ef5ce-c21a-409d-a100-0959f3b3edd4",
+    "title": "SandboxChanged: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "9116e2f4-c4a6-496b-9a7d-28c2a499c2cc",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "21897e53-ae33-4f96-9f72-2d171606e92f",
+    "title": "SandboxChanged: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "6f918fa9-1b64-4079-b743-b4f40f1b7322",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "13646657-2163-4208-8056-0d097c53f6e4",
+    "title": "SandboxChanged: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f7034803-289e-44d5-ae17-b439249cca7b",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1042516a-45a0-4d66-90d1-acdbf49597f3",
+    "title": "SandboxChanged: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "90bad8c2-9af0-4b1b-ae2c-127c8ceec07a",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "bc34412a-d2fb-4010-9cc4-fd9c04164244",
+    "title": "SandboxChanged: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "68d2acf7-e622-4d64-9027-25c2ad3ae549",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6def0cce-157b-4e26-aab7-bcdba91fbb71",
+    "title": "SandboxChanged: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "1daeab9d-e3b0-474e-979b-9a9c1df507e2",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "dedd4d16-3f41-4d72-b069-45b2f2c6512a",
+    "title": "SandboxChanged: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a5e0a109-ed1f-42e9-be8f-6dc55fff729b",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "9b5d6fdc-7ce4-476d-9c51-541de170ca44",
+    "title": "Unhealthy: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 5,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.13:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:09:43+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "69d928b0-2802-46af-887c-8a67ff06cee7",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "452f5df9-80e9-4e34-a86a-e0fa7b5b7aad",
+    "title": "Unhealthy: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 2,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.13:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:09:43+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "8f8473ff-7c2a-442f-9043-50ad88b723d6",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "0bd4973c-e8f7-4928-8a67-b4b5221f312b",
+    "title": "SandboxChanged: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "cf34b52b-72fe-4f1b-94fe-843b5825a051",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1d6bb220-4b59-4bd2-a010-e080db145552",
+    "title": "SandboxChanged: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "6e6179ce-1c08-477e-aa28-7c7bbdcdffc0",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "4c8a348d-8cc2-4595-a4ef-ad8a29777601",
+    "title": "Unhealthy: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 4,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.6:50051\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:16+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "796c8836-0b59-43db-8b4b-ba422e4f2c0f",
+    "timestamp": "2026-04-20T17:25:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "a8968b51-7d34-4fd3-819b-4f7ca94094bc",
+    "title": "SandboxChanged: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 1,
+      "reason": "SandboxChanged",
+      "message": "Pod sandbox changed, it will be killed and re-created.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:25:27+00:00",
+      "first_seen": "2026-04-20T17:25:27+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "13d8bd52-10a9-4e4d-b571-7b6090407772",
+    "timestamp": "2026-04-20T17:25:26+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "a07a4f52-6105-4d8b-93da-8bca84b3e258",
+    "title": "Unhealthy: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 3,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.10:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:26+00:00",
+      "first_seen": "2026-04-20T17:09:29+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "ca6b0fd1-f6f0-4705-b9f8-2e95c551e595",
+    "timestamp": "2026-04-20T17:25:26+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "df551b95-5ce2-4fee-833e-b2cf523aecce",
+    "title": "Unhealthy: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.10:8080\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:26+00:00",
+      "first_seen": "2026-04-20T17:25:26+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b5a92c78-f1a3-4210-87f7-962ed572c263",
+    "timestamp": "2026-04-20T17:25:26+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1183af28-11e9-4770-bcf0-256a6bb66a3d",
+    "title": "Unhealthy: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: dial tcp 10.244.0.9:6379: i/o timeout",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:26+00:00",
+      "first_seen": "2026-04-20T17:25:26+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "48deabec-dc5b-4a29-9ccf-bdbb1f903009",
+    "timestamp": "2026-04-20T17:25:26+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "45cd5ac0-86a9-404f-961d-e52683ffc755",
+    "title": "FailedSync: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "FailedSync",
+      "message": "error determining status: rpc error: code = Unavailable desc = connection error: desc = \"error reading server preface: read unix @->/run/cri-dockerd.sock: read: connection reset by peer\"",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:26+00:00",
+      "first_seen": "2026-04-20T17:25:26+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "5b7e4a92-d28b-47ad-8585-c6403bd8a382",
+    "timestamp": "2026-04-20T17:25:26+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "d1551f8f-5cbf-40f2-a7a2-cca88ec287fe",
+    "title": "Unhealthy: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: dial tcp 10.244.0.9:6379: i/o timeout",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:26+00:00",
+      "first_seen": "2026-04-20T17:25:26+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a3a31eba-ebf2-4495-b341-0c102a16390d",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6cc4c3e8-dc3b-4e92-b64d-74a77b542173",
+    "title": "Unhealthy: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.8:7070\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "1b53104c-3cbc-4a77-8f66-98efbc99be95",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "2bbf136f-fa93-4672-84d7-4672ec075e86",
+    "title": "Unhealthy: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.8:7070\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "e278e3b3-fe06-4ea2-8e75-66551dbef895",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "918dc999-e160-4e19-a0c5-541ce9b10e6e",
+    "title": "Unhealthy: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.7:5050\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "8b85fb94-0075-48fa-bc9e-818b3068954a",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "4090314b-40bb-41ff-a4b7-f3bb0b664ebb",
+    "title": "Unhealthy: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.7:5050\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b4e90e54-b945-4094-9d43-69595aa4c8f6",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "f38571d0-d2c5-497a-81cf-f2d0cbbcc4ea",
+    "title": "Unhealthy: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: Get \"http://10.244.0.12:8080/_healthz\": dial tcp 10.244.0.12:8080: connect: connection refused",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "fdab3b5c-aba2-4706-8266-4e50fe048aa2",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "cdd05294-5b34-49ad-9e28-6ebfa5840a9c",
+    "title": "Unhealthy: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: Get \"http://10.244.0.12:8080/_healthz\": dial tcp 10.244.0.12:8080: connect: connection refused",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "cb3f07aa-a0a3-40eb-aafb-49bba518a443",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "9dcfa0e4-bff9-499f-a537-c45f6dca6854",
+    "title": "Unhealthy: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.5:3550\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "b6e09823-658d-477b-959f-7367832d00d0",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "ee5119ed-03bf-439d-820a-793afd1d2395",
+    "title": "Unhealthy: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.5:3550\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "7daa6b04-e624-457a-82fa-c88f516b071a",
+    "timestamp": "2026-04-20T17:25:21+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6068afce-dbd7-4c23-b715-bc145bf3a81b",
+    "title": "Unhealthy: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.6:50051\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:21+00:00",
+      "first_seen": "2026-04-20T17:25:21+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "27886c63-7cae-4140-898c-1cb632dee7ba",
+    "timestamp": "2026-04-20T17:25:20+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1c05bea1-b644-4824-a445-6ecc64f3689a",
+    "title": "Unhealthy: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 2,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: dial tcp 10.244.0.9:6379: connect: connection refused",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:20+00:00",
+      "first_seen": "2026-04-20T17:25:15+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a98773bf-86b4-431e-b4a5-f13427eae5ec",
+    "timestamp": "2026-04-20T17:25:20+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "fe232af7-df92-4202-b990-a3f525d80412",
+    "title": "Unhealthy: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 2,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: dial tcp 10.244.0.9:6379: connect: connection refused",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:20+00:00",
+      "first_seen": "2026-04-20T17:25:15+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "806f2ea3-ab34-465f-ace4-4d6c61ba0ebd",
+    "timestamp": "2026-04-20T17:25:17+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "ec8f4d20-f623-4988-9c76-69753bfc79c2",
+    "title": "Unhealthy: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Liveness probe failed: timeout: failed to connect service \"10.244.0.14:9555\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:17+00:00",
+      "first_seen": "2026-04-20T17:25:17+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "8e57107c-9bbb-4f18-abfe-e4a88c76a919",
+    "timestamp": "2026-04-20T17:25:17+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "32ae8e78-af3e-4641-980f-47c9fa141eb7",
+    "title": "Unhealthy: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.14:9555\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:25:17+00:00",
+      "first_seen": "2026-04-20T17:25:17+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "1036604f-69fb-4a25-8cf2-23ad98b2b44b",
+    "timestamp": "2026-04-20T17:10:04+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "563964a8-66cb-4420-bfa9-56a4d0403a27",
+    "title": "Pulled: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator:v0.10.5\" in 4.74s (4.74s including waiting). Image size: 133793781 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:10:04+00:00",
+      "first_seen": "2026-04-20T17:10:04+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "abb6e0bc-ea76-414c-8329-a9694929c4cd",
+    "timestamp": "2026-04-20T17:09:59+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "d19d738c-acbf-4b47-96ef-0353af893cbe",
+    "title": "Pulling: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:59+00:00",
+      "first_seen": "2026-04-20T17:09:59+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "4a4332af-6057-44da-b5c5-2e0ef633142e",
+    "timestamp": "2026-04-20T17:09:51+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "2195044c-1e95-41c3-a3d0-a5e8e1cbd9a9",
+    "title": "Pulled: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.5\" in 9.088s (58.429s including waiting). Image size: 264627975 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:51+00:00",
+      "first_seen": "2026-04-20T17:09:51+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "37693dd2-b9be-4228-a010-1e8eab0a3008",
+    "timestamp": "2026-04-20T17:09:43+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "b5bc3e13-948a-443a-bb6f-663116e79737",
+    "title": "Pulled: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/recommendationservice:v0.10.5\" in 3.794s (49.475s including waiting). Image size: 112674415 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:43+00:00",
+      "first_seen": "2026-04-20T17:09:43+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "045d6da8-fd74-49ef-bbea-bba6af74f375",
+    "timestamp": "2026-04-20T17:09:40+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "ab596008-d064-4d4c-ac11-0361634a1ee7",
+    "title": "Pulled: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5\" in 2.687s (46.092s including waiting). Image size: 25078967 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:40+00:00",
+      "first_seen": "2026-04-20T17:09:40+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "11f4997a-bf6b-420f-9e7c-d022617a98fd",
+    "timestamp": "2026-04-20T17:09:38+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "0abf3dc7-c0f7-40f5-9a69-4e91c0bcfb7f",
+    "title": "Unhealthy: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.11:50051\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:09:38+00:00",
+      "first_seen": "2026-04-20T17:09:38+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "941038bd-a7d0-4f5d-9def-0b23660e0439",
+    "timestamp": "2026-04-20T17:09:37+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "79cc63b2-0beb-4c72-8f8a-8974712f0cab",
+    "title": "Pulled: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice:v0.10.5\" in 9.394s (43.6s including waiting). Image size: 178140870 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:37+00:00",
+      "first_seen": "2026-04-20T17:09:37+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "04abb072-669f-40f0-b9fe-4160099eae8c",
+    "timestamp": "2026-04-20T17:09:27+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "918bdeb9-2e2a-443f-b14a-16f17b88edd6",
+    "title": "Pulled: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice:v0.10.5\" in 5.225s (34.388s including waiting). Image size: 114912330 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:27+00:00",
+      "first_seen": "2026-04-20T17:09:27+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "3edcf6a4-ae8a-4b18-b7d1-9a1965e2e105",
+    "timestamp": "2026-04-20T17:09:22+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "12ec00d8-1873-4cbc-b8e1-724d0c90bbfd",
+    "title": "Pulled: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"redis:alpine\" in 2.277s (29.178s including waiting). Image size: 97253851 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:22+00:00",
+      "first_seen": "2026-04-20T17:09:22+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "31e3e16c-4b9e-4aaf-b557-7b1f2412c921",
+    "timestamp": "2026-04-20T17:09:20+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "301ccc83-84be-49e8-97b1-13a9e47e7630",
+    "title": "Pulled: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/cartservice:v0.10.5\" in 2.919s (27.245s including waiting). Image size: 44001934 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:20+00:00",
+      "first_seen": "2026-04-20T17:09:20+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "5222166e-6391-4c90-9ae1-a03480c0dc75",
+    "timestamp": "2026-04-20T17:09:17+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "7bc3d1ca-a3c9-410a-9bd9-51a20c3d549d",
+    "title": "Pulled: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice:v0.10.5\" in 2.411s (24.402s including waiting). Image size: 19020607 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:17+00:00",
+      "first_seen": "2026-04-20T17:09:17+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "579b14a1-5082-4ff5-8f3f-21426712ceb5",
+    "timestamp": "2026-04-20T17:09:15+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "60c1c524-35a7-420a-a1bb-b092cacbf963",
+    "title": "Pulled: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice:v0.10.5\" in 2.177s (22.062s including waiting). Image size: 18389823 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:15+00:00",
+      "first_seen": "2026-04-20T17:09:15+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "163bb9c9-49cf-47f6-a660-3dd2a5508465",
+    "timestamp": "2026-04-20T17:09:12+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6e496454-b894-4661-8d59-89f9c7f3b262",
+    "title": "Pulled: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5\" in 8.381s (19.971s including waiting). Image size: 27200070 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:12+00:00",
+      "first_seen": "2026-04-20T17:09:12+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a8fafa08-3b70-44a6-aae0-332040f30b16",
+    "timestamp": "2026-04-20T17:09:07+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "5834be05-36f3-454f-a28e-53cc08657880",
+    "title": "Unhealthy: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 1,
+      "reason": "Unhealthy",
+      "message": "Readiness probe failed: timeout: failed to connect service \"10.244.0.3:7000\" within 1s: context deadline exceeded",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:09:07+00:00",
+      "first_seen": "2026-04-20T17:09:07+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "c91bb508-6966-4bae-9c8a-64f12848430d",
+    "timestamp": "2026-04-20T17:09:06+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "8270338f-70ff-497f-9018-215b295701a1",
+    "title": "Pulled: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"busybox:latest\" in 836ms (11.605s including waiting). Image size: 4421262 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:06+00:00",
+      "first_seen": "2026-04-20T17:09:06+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "ad79ca87-5b53-479d-ac58-07ce524a1cd7",
+    "timestamp": "2026-04-20T17:09:05+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "950d9e5a-7a6d-4a73-afb1-c71215d142eb",
+    "title": "Pulled: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 1,
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/currencyservice:v0.10.5\" in 10.826s (10.826s including waiting). Image size: 185652065 bytes.",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:09:05+00:00",
+      "first_seen": "2026-04-20T17:09:05+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "40714675-0f6f-410d-b4e2-86a6dacf8475",
+    "timestamp": "2026-04-20T17:08:56+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "0c23f5cf-3ea9-4c43-a8e5-8e4473014c48",
+    "title": "Pulling: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:56+00:00",
+      "first_seen": "2026-04-20T17:08:56+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "f6403231-ace3-423c-8d3d-dc16242f3fb8",
+    "timestamp": "2026-04-20T17:08:56+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "6953a38c-d472-4852-b889-fd6ca65f0259",
+    "title": "Pulling: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/recommendationservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:56+00:00",
+      "first_seen": "2026-04-20T17:08:56+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "ed4a78e9-dc83-406c-bbeb-99dcdf37c929",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "18f63b05-a812-4b46-80e9-5b9abf871e59",
+    "title": "Scheduled: Pod/adservice-8d9d67f7-8b76v",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/adservice-8d9d67f7-8b76v to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "427ce261-67b3-4884-927e-afd2e6730770",
+        "kind": "Pod",
+        "name": "adservice-8d9d67f7-8b76v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "014e74c1-8b9f-4a74-89e2-471f0726d203",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "eda4f982-75e3-42bc-9e4b-31e6df82404a",
+    "title": "SuccessfulCreate: ReplicaSet/adservice-8d9d67f7",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: adservice-8d9d67f7-8b76v",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "5aa35450-8bd7-44ae-a124-8a4f7adb3c25",
+        "kind": "ReplicaSet",
+        "name": "adservice-8d9d67f7",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "98df473f-7a9f-48f4-a4d3-b0cb177359aa",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "adservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "e34be172-0147-4f5a-bad3-13d30ffccc5f",
+    "title": "ScalingReplicaSet: Deployment/adservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set adservice-8d9d67f7 to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "6131a9fc-ecbe-46ba-87bd-6a8e2ddde7b9",
+        "kind": "Deployment",
+        "name": "adservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "c8e59c25-2ed4-423f-84f5-fcf8e6b428e7",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "1931457e-2bc3-44b2-8dcd-f56217170418",
+    "title": "Pulling: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "1e4d708f-ba24-4d11-b0f3-392fba9cc317",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "1401c9b9-80d2-406d-a663-602b9c84172f",
+    "title": "Scheduled: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/frontend-849f6b48f8-8llnh to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "39cf9e31-95e4-4d89-a040-b329bf3d7add",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "a6627e04-af3a-42ba-850c-4e4de2b0885e",
+    "title": "Pulling: Pod/frontend-849f6b48f8-8llnh",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "bc960b3d-837e-4900-972a-0a85acf32d2b",
+        "kind": "Pod",
+        "name": "frontend-849f6b48f8-8llnh",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "a1c124e5-348f-425c-9554-e2327eb7ea75",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "586dfdf6-a8f2-4599-b301-4c904bb4520c",
+    "title": "SuccessfulCreate: ReplicaSet/frontend-849f6b48f8",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: frontend-849f6b48f8-8llnh",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "0a9300cd-06de-495b-b58a-601eaeb8862b",
+        "kind": "ReplicaSet",
+        "name": "frontend-849f6b48f8",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "b96345f6-9ac3-467f-b9c0-98092de21622",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "cb9f8242-c933-4380-9520-9ac4643e7dfd",
+    "title": "Pulling: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "d2eb7d56-3a78-413e-916d-f6de71b2144d",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "e6cd6adb-f841-4f3e-92d6-6ad32b353399",
+    "title": "Scheduled: Pod/recommendationservice-6989468ddf-942qs",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/recommendationservice-6989468ddf-942qs to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "424f8b34-ba92-4114-becf-9898b0710572",
+        "kind": "Pod",
+        "name": "recommendationservice-6989468ddf-942qs",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "3647795b-b21d-4f56-a98b-a3f880413c72",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "bc1d1134-dafb-45f1-b4e9-f317229e2fbe",
+    "title": "SuccessfulCreate: ReplicaSet/recommendationservice-6989468ddf",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: recommendationservice-6989468ddf-942qs",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "72e7756d-18a3-4ee1-8f9a-f69ecac82122",
+        "kind": "ReplicaSet",
+        "name": "recommendationservice-6989468ddf",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "15111048-3e61-42bf-83ec-51fc341c3791",
+    "timestamp": "2026-04-20T17:08:55+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "f8855737-934e-46e0-8452-a0245c5a7ba8",
+    "title": "Pulling: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"redis:alpine\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:55+00:00",
+      "first_seen": "2026-04-20T17:08:55+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "db25abc7-4b46-4882-b8f5-a844d2e4be98",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "a4c955e1-5530-48aa-905f-f25e3e4e9514",
+    "title": "Scheduled: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/cartservice-7b6889d85b-r8l82 to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "a35363f5-afeb-41e8-9e5b-8494e27b5b66",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "bd828119-a358-4478-8723-95dbe8c37ac5",
+    "title": "Pulling: Pod/cartservice-7b6889d85b-r8l82",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/cartservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "84bee532-961d-4045-9d4b-bbd0618f8931",
+        "kind": "Pod",
+        "name": "cartservice-7b6889d85b-r8l82",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "ef5e15f8-d63c-4d34-9248-534d6f8d207f",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "637fab2c-1e72-4052-907b-7e0608fa959d",
+    "title": "SuccessfulCreate: ReplicaSet/cartservice-7b6889d85b",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: cartservice-7b6889d85b-r8l82",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "5f63cb31-a5c5-4eb1-95be-d95ca04f37c8",
+        "kind": "ReplicaSet",
+        "name": "cartservice-7b6889d85b",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "ff534c53-ad1b-486f-8dce-bdc99087b8ff",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "cartservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "1271efe6-dd5b-4058-85f7-8caac29fb6f5",
+    "title": "ScalingReplicaSet: Deployment/cartservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set cartservice-7b6889d85b to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "451ec572-e6c3-4ac6-94c1-bdbb242c16c0",
+        "kind": "Deployment",
+        "name": "cartservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "b295190b-25f7-491f-a922-301bb9cc502f",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "d1b38823-e899-4605-908d-e6d95c5e89a0",
+    "title": "Scheduled: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/checkoutservice-5987dfd54c-jp8xx to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "7be409dd-1b5e-40a8-bddc-3e74af7d07c2",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "dca902ae-dc69-4d72-866b-b61117475e44",
+    "title": "Pulling: Pod/checkoutservice-5987dfd54c-jp8xx",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "5b5f7576-c590-4b6c-9154-446e12656556",
+        "kind": "Pod",
+        "name": "checkoutservice-5987dfd54c-jp8xx",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "09bdc10d-d160-4bc1-8ed8-ba23a2db02bf",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "checkoutservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "f7b10bad-4ac8-485c-9bc9-33250a05b5fa",
+    "title": "FailedCreate: ReplicaSet/checkoutservice-5987dfd54c",
+    "payload": {
+      "count": 3,
+      "reason": "FailedCreate",
+      "message": "Error creating: pods \"checkoutservice-5987dfd54c-\" is forbidden: error looking up service account boutique/checkoutservice: serviceaccount \"checkoutservice\" not found",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "52bd16d0-b655-4844-b1f1-19b3f4be1b00",
+        "kind": "ReplicaSet",
+        "name": "checkoutservice-5987dfd54c",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "b573bdab-8e67-475d-a709-20f621f6e360",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "3d4deea6-cf19-4f76-9945-42a29cfacc5c",
+    "title": "SuccessfulCreate: ReplicaSet/checkoutservice-5987dfd54c",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: checkoutservice-5987dfd54c-jp8xx",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "52bd16d0-b655-4844-b1f1-19b3f4be1b00",
+        "kind": "ReplicaSet",
+        "name": "checkoutservice-5987dfd54c",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "982b6844-d4bd-4bad-b775-2b0d8473682a",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "checkoutservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "2b265496-b114-4179-9b73-e1b193943722",
+    "title": "ScalingReplicaSet: Deployment/checkoutservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set checkoutservice-5987dfd54c to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "3057ad15-1e0e-4adb-9c6d-672d9ae77d34",
+        "kind": "Deployment",
+        "name": "checkoutservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "8ac7b216-4072-44c6-afd6-4841ef45c178",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "38b63a02-aa59-4eca-82c4-a634e9f2e5f5",
+    "title": "Scheduled: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/currencyservice-8c464cb79-gnkbl to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "83b9d6fc-9042-4d74-a0a8-823dcc864038",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "fa86ca92-3fa5-47f6-baab-2c867f63e323",
+    "title": "Pulling: Pod/currencyservice-8c464cb79-gnkbl",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/currencyservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "f4048314-6e4d-4c09-96a4-875f1c013845",
+        "kind": "Pod",
+        "name": "currencyservice-8c464cb79-gnkbl",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "93565dd6-39ec-4357-b51b-9a53fdfe632b",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "e9a6d996-7193-4412-9206-dc952c723d0b",
+    "title": "Scheduled: Pod/emailservice-7b7898b7f7-rgq9x",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/emailservice-7b7898b7f7-rgq9x to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "4a9b3e81-10b2-440c-bc8c-a2cb457f1f95",
+        "kind": "Pod",
+        "name": "emailservice-7b7898b7f7-rgq9x",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "0a5736e6-430f-485b-944e-bbe1ca587d09",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "94631ece-d26e-4095-8c01-068e15ddd954",
+    "title": "SuccessfulCreate: ReplicaSet/emailservice-7b7898b7f7",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: emailservice-7b7898b7f7-rgq9x",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "d44aadca-ba1c-40ba-8fa8-be44588ce629",
+        "kind": "ReplicaSet",
+        "name": "emailservice-7b7898b7f7",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "a8bb0cc4-dadd-4c7f-9510-cee5f67c8c17",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "emailservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "4ce738a5-5534-4b80-a19a-c8d4731fe54b",
+    "title": "ScalingReplicaSet: Deployment/emailservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set emailservice-7b7898b7f7 to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "86d959ba-d7c7-4709-8371-3bbad80f9682",
+        "kind": "Deployment",
+        "name": "emailservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "2aa9175a-8152-4743-915b-f979bf9983ef",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "frontend",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "fa65a2a0-ecd4-4cf5-8952-1a902f4d24d9",
+    "title": "ScalingReplicaSet: Deployment/frontend",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set frontend-849f6b48f8 to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "aa9a27e6-4d3d-49a2-9bf1-65c9e2af8786",
+        "kind": "Deployment",
+        "name": "frontend",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "c0653e1c-af50-4558-932d-9cb3999e472d",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "87fc6ce9-00c3-4fe8-9b00-d1fa19c67d13",
+    "title": "Scheduled: Pod/loadgenerator-746ffcd44c-bdtkq",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/loadgenerator-746ffcd44c-bdtkq to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "7f41665d-6ebf-41e7-b3b8-49d66f4f5c78",
+        "kind": "Pod",
+        "name": "loadgenerator-746ffcd44c-bdtkq",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "8ce975aa-af9b-40c6-8278-2a6abfecd708",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "269c12d3-6dd2-4d97-b7bc-464282645dd5",
+    "title": "SuccessfulCreate: ReplicaSet/loadgenerator-746ffcd44c",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: loadgenerator-746ffcd44c-bdtkq",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "f6378aa0-e744-45fe-8a25-7b2cdff0c3de",
+        "kind": "ReplicaSet",
+        "name": "loadgenerator-746ffcd44c",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "c5b47ae1-22fc-4da2-a15f-3608811d24b5",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "loadgenerator",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "515349cf-08ee-40cf-9262-1710a6b31bf5",
+    "title": "ScalingReplicaSet: Deployment/loadgenerator",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set loadgenerator-746ffcd44c to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "e6944773-7abd-4dd2-992a-9dc8ec1a1fdd",
+        "kind": "Deployment",
+        "name": "loadgenerator",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "93af923e-20d8-4076-b15e-562d9a1cd82e",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "fd7a9606-7253-46cb-9630-7c2fda00c329",
+    "title": "Scheduled: Pod/paymentservice-5d879448df-8nfbn",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/paymentservice-5d879448df-8nfbn to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "e27480e9-95ef-4f44-9c0d-5c3f50234182",
+        "kind": "Pod",
+        "name": "paymentservice-5d879448df-8nfbn",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "0c36896f-7c1e-414f-a5ee-3e0efc3525ef",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "5e225908-6d32-4001-bcb4-a3f76861b828",
+    "title": "SuccessfulCreate: ReplicaSet/paymentservice-5d879448df",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: paymentservice-5d879448df-8nfbn",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "36971a73-8c8c-4760-8848-7da2de1b4233",
+        "kind": "ReplicaSet",
+        "name": "paymentservice-5d879448df",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "8720889b-2b57-4512-bbf7-120f9cef09ad",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "paymentservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "8ce6d5ac-1513-4617-8928-05bbfaa1bb76",
+    "title": "ScalingReplicaSet: Deployment/paymentservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set paymentservice-5d879448df to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "2e6c1b76-feff-4620-8adc-ff45f7a73331",
+        "kind": "Deployment",
+        "name": "paymentservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "d0538bf9-5ea6-4161-bdec-944c69cd770d",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "a33ecb83-481f-445b-9ede-d953cf68c0b8",
+    "title": "Scheduled: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/productcatalogservice-64cd8c46d9-pf8rg to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "ce9ac948-498a-452e-9757-6efa41409810",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "62925d3a-1cad-442c-8b30-4d6e45552eae",
+    "title": "Pulling: Pod/productcatalogservice-64cd8c46d9-pf8rg",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "4160d67c-7f78-4b5f-873c-59b80f0b97c2",
+        "kind": "Pod",
+        "name": "productcatalogservice-64cd8c46d9-pf8rg",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "c84a36ae-6937-4528-8330-a2f66199b669",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "6966eb19-0ee8-414e-9bda-cd9d2b2df1f7",
+    "title": "SuccessfulCreate: ReplicaSet/productcatalogservice-64cd8c46d9",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: productcatalogservice-64cd8c46d9-pf8rg",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "7d07af11-781c-4b8d-ad04-4e9f492ddb4b",
+        "kind": "ReplicaSet",
+        "name": "productcatalogservice-64cd8c46d9",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "900ca77e-de5e-4ce8-a01d-b2dc3708ef36",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "productcatalogservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "f74eaaed-44e6-49a6-9981-e9bb1d6a1f53",
+    "title": "ScalingReplicaSet: Deployment/productcatalogservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set productcatalogservice-64cd8c46d9 to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "f785e18c-3f9a-4d34-a0be-7f57ebf553ab",
+        "kind": "Deployment",
+        "name": "productcatalogservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "9fcb7e5d-8f54-4eee-9aaf-feac90a48348",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "recommendationservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "b153f1a1-1f9c-44a1-a4fd-8c980fd28898",
+    "title": "ScalingReplicaSet: Deployment/recommendationservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set recommendationservice-6989468ddf to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "42060cca-0ed9-4330-86fb-6808b44205a0",
+        "kind": "Deployment",
+        "name": "recommendationservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "c25084bb-7ef7-44bd-9dd1-4b309589dd97",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "b1a0bc5c-7416-46e9-855e-73b55ce5daef",
+    "title": "Scheduled: Pod/redis-cart-7ff8f4d6ff-gzjgk",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/redis-cart-7ff8f4d6ff-gzjgk to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "b4d5d33d-d67f-4cdb-a78a-d0cfcb1dff8b",
+        "kind": "Pod",
+        "name": "redis-cart-7ff8f4d6ff-gzjgk",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "11802886-7c5f-4f39-9c2e-46030e416f6b",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "6e1abfc8-0f39-439e-b0b6-80792baae3aa",
+    "title": "SuccessfulCreate: ReplicaSet/redis-cart-7ff8f4d6ff",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: redis-cart-7ff8f4d6ff-gzjgk",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "620761fa-172c-4201-801d-e7bb5b854a6b",
+        "kind": "ReplicaSet",
+        "name": "redis-cart-7ff8f4d6ff",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "67cb8b07-e73e-4f04-b96e-2f26fe0975c4",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "redis-cart",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "fa87f3fb-9c1a-4214-9c9c-e79609c91093",
+    "title": "ScalingReplicaSet: Deployment/redis-cart",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set redis-cart-7ff8f4d6ff to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "22ee54ad-7cdf-457e-9116-da40e862552c",
+        "kind": "Deployment",
+        "name": "redis-cart",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "ed961c25-df8f-4b47-9019-e9d5b279fa7a",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "default-scheduler",
+    "source_system": "kubernetes",
+    "source_id": "0d18be4b-4c32-429d-b1fa-c9a389580731",
+    "title": "Scheduled: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned boutique/shippingservice-69cbf7c6c7-ggd9v to watchtower",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "default-scheduler"
+    }
+  },
+  {
+    "id": "a055304e-65ec-45cb-8d90-a1dcacfc72c3",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "kubelet",
+    "source_system": "kubernetes",
+    "source_id": "7acaf32c-41e2-4b31-a482-340df5372990",
+    "title": "Pulling: Pod/shippingservice-69cbf7c6c7-ggd9v",
+    "payload": {
+      "count": 1,
+      "reason": "Pulling",
+      "message": "Pulling image \"us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice:v0.10.5\"",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "9eebe016-49c6-4154-9c50-6b3dc7eb3c07",
+        "kind": "Pod",
+        "name": "shippingservice-69cbf7c6c7-ggd9v",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "watchtower",
+      "reporting_component": "kubelet"
+    }
+  },
+  {
+    "id": "918e528a-de30-4d32-a959-a0bdc424c980",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "f94faaf8-2866-4c09-a40a-441a4032312d",
+    "title": "SuccessfulCreate: ReplicaSet/shippingservice-69cbf7c6c7",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: shippingservice-69cbf7c6c7-ggd9v",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "6c6a0d3a-c159-4f1e-b2cb-417d8c0b7a62",
+        "kind": "ReplicaSet",
+        "name": "shippingservice-69cbf7c6c7",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "e4143452-72cb-4e9a-9311-3381514df788",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "shippingservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "6b3574b4-9cc3-466d-9ed6-6e609b336d60",
+    "title": "ScalingReplicaSet: Deployment/shippingservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set shippingservice-69cbf7c6c7 to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "deed27d5-b4da-4e0c-b5d0-2bac9a8cadef",
+        "kind": "Deployment",
+        "name": "shippingservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "8c470be5-b483-4fbb-93ab-033df2441e54",
+    "timestamp": "2026-04-20T17:08:54+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "productcatalogservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "bce29060-588e-4269-b22e-5fe967195972",
+    "title": "FailedCreate: ReplicaSet/productcatalogservice-64cd8c46d9",
+    "payload": {
+      "count": 3,
+      "reason": "FailedCreate",
+      "message": "Error creating: pods \"productcatalogservice-64cd8c46d9-\" is forbidden: error looking up service account boutique/productcatalogservice: serviceaccount \"productcatalogservice\" not found",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:08:54+00:00",
+      "first_seen": "2026-04-20T17:08:54+00:00",
+      "involved_object": {
+        "uid": "7d07af11-781c-4b8d-ad04-4e9f492ddb4b",
+        "kind": "ReplicaSet",
+        "name": "productcatalogservice-64cd8c46d9",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "87244ee7-3556-4c3a-9063-070b3b57d335",
+    "timestamp": "2026-04-20T17:08:53+00:00",
+    "event_type": "k8s_event",
+    "severity": "warning",
+    "service": "currencyservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "fb48a7e4-cdc6-45a4-b26b-53899fc0941d",
+    "title": "FailedCreate: ReplicaSet/currencyservice-8c464cb79",
+    "payload": {
+      "count": 1,
+      "reason": "FailedCreate",
+      "message": "Error creating: pods \"currencyservice-8c464cb79-\" is forbidden: error looking up service account boutique/currencyservice: serviceaccount \"currencyservice\" not found",
+      "k8s_type": "Warning",
+      "last_seen": "2026-04-20T17:08:53+00:00",
+      "first_seen": "2026-04-20T17:08:53+00:00",
+      "involved_object": {
+        "uid": "33ead1c7-8f61-4b8f-ae95-0c43aa63f5f7",
+        "kind": "ReplicaSet",
+        "name": "currencyservice-8c464cb79",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "ce3473e5-fa63-4add-8017-e0a3eaabdf5a",
+    "timestamp": "2026-04-20T17:08:53+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "replicaset-controller",
+    "source_system": "kubernetes",
+    "source_id": "2658f72f-6ae7-4796-8e08-90ac75906c2e",
+    "title": "SuccessfulCreate: ReplicaSet/currencyservice-8c464cb79",
+    "payload": {
+      "count": 1,
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: currencyservice-8c464cb79-gnkbl",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:53+00:00",
+      "first_seen": "2026-04-20T17:08:53+00:00",
+      "involved_object": {
+        "uid": "33ead1c7-8f61-4b8f-ae95-0c43aa63f5f7",
+        "kind": "ReplicaSet",
+        "name": "currencyservice-8c464cb79",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "replicaset-controller"
+    }
+  },
+  {
+    "id": "2844403d-bb3d-4554-817b-242dd6dd1461",
+    "timestamp": "2026-04-20T17:08:53+00:00",
+    "event_type": "k8s_event",
+    "severity": "info",
+    "service": "currencyservice",
+    "actor": "deployment-controller",
+    "source_system": "kubernetes",
+    "source_id": "63abc60c-ab15-4e59-ae8d-549f8e81ba9c",
+    "title": "ScalingReplicaSet: Deployment/currencyservice",
+    "payload": {
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set currencyservice-8c464cb79 to 1",
+      "k8s_type": "Normal",
+      "last_seen": "2026-04-20T17:08:53+00:00",
+      "first_seen": "2026-04-20T17:08:53+00:00",
+      "involved_object": {
+        "uid": "346b0272-1b3a-46de-9180-21fcc854f98f",
+        "kind": "Deployment",
+        "name": "currencyservice",
+        "namespace": "boutique"
+      },
+      "reporting_instance": "",
+      "reporting_component": "deployment-controller"
+    }
+  },
+  {
+    "id": "f97f7902-9aed-4cfc-a8b8-0139669024be",
+    "timestamp": "2026-04-20T13:40:42.785024+00:00",
+    "event_type": "deploy",
+    "severity": "info",
+    "service": "checkout",
+    "actor": "sandeep",
+    "source_system": "github",
+    "source_id": "test-commit-abc123",
+    "title": "Test deploy of checkout service",
+    "payload": {
+      "branch": "main",
+      "commit_sha": "abc123",
+      "environment": "prod"
+    }
+  },
+  {
+    "id": "73118b49-c568-4aa4-b74d-c0319606643b",
+    "timestamp": "2026-04-16T02:07:18+00:00",
+    "event_type": "deploy",
+    "severity": "info",
+    "service": "usda-chatbot",
+    "actor": "Aruthrasathishkumar",
+    "source_system": "github",
+    "source_id": "push-17bdfa64d643-main",
+    "title": "Push to main (0 commit(s))",
+    "payload": {
+      "repo": "Aruthrasathishkumar/usda-chatbot",
+      "branch": "main",
+      "commits": [],
+      "head_sha": "17bdfa64d6433dfbe1c615ce2a2e7251d96b3bc8",
+      "commit_count": 0,
+      "github_event_id": "10639517931"
+    }
+  },
+  {
+    "id": "0b8db154-0f28-4199-ba07-425dda428f1f",
+    "timestamp": "2026-04-09T17:47:10+00:00",
+    "event_type": "deploy",
+    "severity": "info",
+    "service": "usda-chatbot",
+    "actor": "Aruthrasathishkumar",
+    "source_system": "github",
+    "source_id": "push-7bb64cf18fcc-main",
+    "title": "Push to main (0 commit(s))",
+    "payload": {
+      "repo": "Aruthrasathishkumar/usda-chatbot",
+      "branch": "main",
+      "commits": [],
+      "head_sha": "7bb64cf18fcc284179809004e818fe3b8a6bc409",
+      "commit_count": 0,
+      "github_event_id": "10390271445"
+    }
+  },
+  {
+    "id": "d0a78b36-6e35-4aef-bb26-9c78c273b27c",
+    "timestamp": "2026-04-09T06:00:06+00:00",
+    "event_type": "deploy",
+    "severity": "info",
+    "service": "usda-chatbot",
+    "actor": "Aruthrasathishkumar",
+    "source_system": "github",
+    "source_id": "push-396e49d4eb55-main",
+    "title": "Push to main (0 commit(s))",
+    "payload": {
+      "repo": "Aruthrasathishkumar/usda-chatbot",
+      "branch": "main",
+      "commits": [],
+      "head_sha": "396e49d4eb55524b9734ed7341ce4b07e7e26db6",
+      "commit_count": 0,
+      "github_event_id": "10363561777"
+    }
+  },
+  {
+    "id": "9daef71d-2f35-4829-bf9e-3c35cb228f50",
+    "timestamp": "2026-04-09T02:23:36+00:00",
+    "event_type": "deploy",
+    "severity": "info",
+    "service": "usda-chatbot",
+    "actor": "Aruthrasathishkumar",
+    "source_system": "github",
+    "source_id": "push-e489c7b17d22-main",
+    "title": "Push to main (0 commit(s))",
+    "payload": {
+      "repo": "Aruthrasathishkumar/usda-chatbot",
+      "branch": "main",
+      "commits": [],
+      "head_sha": "e489c7b17d22e60dfc83d8a9eda9f506011b8430",
+      "commit_count": 0,
+      "github_event_id": "10358448652"
+    }
+  },
+  {
+    "id": "8db04d6d-1864-493b-b1c1-bafda3ae04d5",
+    "timestamp": "2026-04-09T02:19:27+00:00",
+    "event_type": "deploy",
+    "severity": "info",
+    "service": "usda-chatbot",
+    "actor": "Aruthrasathishkumar",
+    "source_system": "github",
+    "source_id": "push-930a6a6e19f9-main",
+    "title": "Push to main (0 commit(s))",
+    "payload": {
+      "repo": "Aruthrasathishkumar/usda-chatbot",
+      "branch": "main",
+      "commits": [],
+      "head_sha": "930a6a6e19f9058f596599b85d564c7f4e52cc2b",
+      "commit_count": 0,
+      "github_event_id": "10358358267"
+    }
+  }
+]

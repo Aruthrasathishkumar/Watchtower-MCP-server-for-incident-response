@@ -1,0 +1,27 @@
+# Runbook: elevated error rate across the frontend
+id: high-error-rate
+description: Frontend error rate is elevated — investigate upstream health
+version: 1
+
+triggers:
+  - signal: log_burst
+    service: frontend
+
+checks:
+  - id: frontend_errors
+    description: What error patterns is the frontend reporting?
+    type: loki
+    query: '{namespace="boutique",app="frontend"} |~ "(?i)(error|request error)"'
+    window: 15m
+
+  - id: upstream_health
+    description: Are all backend services ready?
+    type: prometheus
+    query: kube_pod_status_ready{namespace="boutique"}
+
+remedies:
+  - id: no_action
+    description: No automatic remedy — investigate the root cause via logs
+    requires_approval: false
+    command: ""
+    safety: read_only

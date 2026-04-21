@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3bcaedd3-c8e0-46f8-8e8b-44556d12c4e9",
+    "runbook_id": "checkout-latency",
+    "remedy_id": "restart_deployment",
+    "rationale": "**This is an operator-initiated end-to-end pipeline test, not a response to an active incident.**\n\nCurrent service health (verified just now):\n- checkoutservice-5987dfd54c-jp8xx: Ready=1\n- Lifetime restart count: 2 (no recent burst \u2014 baseline)\n- No change events in last 30m\n- No log_burst, high_latency, or pod_restart signals observed\n\nThe operator has explicitly requested execution of `restart_deployment` from the `checkout-latency` runbook to validate the full propose \u2192 approve \u2192 execute pipeline in production. The remedy is a rolling restart (non-destructive, zero-downtime under normal conditions) but is marked `disruptive` and therefore routed through the approval broker as designed.\n\nApprover: please confirm this is the intended test before issuing a token. If you expected to see incident evidence here, do NOT approve \u2014 something is wrong.",
+    "requested_by": "claude",
+    "requested_at": "2026-04-21T00:32:37.783789+00:00",
+    "status": "executed"
+  },
+  {
+    "id": "4e21a30e-2683-4e36-8921-dbad05de0661",
+    "runbook_id": "high-error-rate",
+    "remedy_id": "no_action",
+    "rationale": "Smoke test retry.",
+    "requested_by": "claude",
+    "requested_at": "2026-04-21T00:11:48.785222+00:00",
+    "status": "executed"
+  },
+  {
+    "id": "7106806f-e7a3-4988-978e-65f246e3574f",
+    "runbook_id": "high-error-rate",
+    "remedy_id": "no_action",
+    "rationale": "Smoke test \u2014 verify full approval pipeline.",
+    "requested_by": "claude",
+    "requested_at": "2026-04-21T00:05:05.239422+00:00",
+    "status": "approved"
+  },
+  {
+    "id": "af7c4018-95e1-4f65-ad83-ce58c22878d6",
+    "runbook_id": "checkout-latency",
+    "remedy_id": "restart_deployment",
+    "rationale": "Test rationale",
+    "requested_by": "claude",
+    "requested_at": "2026-04-21T00:01:22.123180+00:00",
+    "status": "approved"
+  }
+]

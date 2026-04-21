@@ -1,0 +1,72 @@
+# --- Secrets & env ---
+.env
+.env.local
+.env.*.local
+server/.env
+*.pem
+*.key
+secrets/
+
+# --- Terraform state ---
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+!terraform.tfvars.example
+tfplan.binary
+*.tfplan
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / frontend (in case) ---
+node_modules/
+dist/
+.DS_Store
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Demo data / heavy dirs ---
+demo/
+demo/microservices-demo/
+
+# --- Model weights (sentence-transformers cache) ---
+~/.cache/huggingface/
+models/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Frontend runtime artifacts ---
+# Keep frontend/public/data/ committed so GitHub Pages has data to serve
+# (data snapshots are intentional for the static demo)
+# But ignore any runtime server logs
+frontend/logs/
+
+# --- Local test artifacts ---
+*.sqlite
+*.db

@@ -1,0 +1,1 @@
+"""GitHub collector for WatchTower."""

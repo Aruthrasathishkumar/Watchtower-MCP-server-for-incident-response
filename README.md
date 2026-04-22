@@ -1,9 +1,11 @@
-# WatchTower - An MCP server for end-to-end incident response
+# 🛡️ WatchTower - An MCP server for end-to-end incident response
 
 **An AI-native incident response platform where Claude Desktop orchestrates investigation, diagnosis, and safe remediation across real production signals - GitHub, Kubernetes, Prometheus, Loki, Slack, and PagerDuty - through a unified MCP (Model Context Protocol) server.**
 
 Live Demo (Frontend Preview):
 https://aruthrasathishkumar.github.io/Watchtower-MCP-server-for-incident-response/
+
+> **Note:** The hosted page is a read-only UI backed by static snapshots of a real WatchTower event store. The MCP server, Postgres, and observability stack run locally by design - a deliberate choice so tool execution, approvals, and remediations stay under operator control. See [Running locally](#running-locally) to run the full system.
 
 ## What it does
 

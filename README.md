@@ -20,48 +20,7 @@ The full incident-response loop - detection, investigation, safe remediation, po
 
 ## Architecture
 
-```
-    Claude Desktop (host)
-          │
-          │  MCP protocol (stdio, JSON-RPC 2.0)
-          ▼
-    WatchTower MCP Server (Python 3.12)
-          │
-          │  12 tools across 5 categories
-          │
-          ├── Event Store
-          │     │
-          │     ├── Postgres 16
-          │     ├── TimescaleDB (time-series indexing)
-          │     └── pgvector (semantic search, 384-dim)
-          │
-          ├── Data Collectors
-          │     │
-          │     ├── GitHub (PyGithub)
-          │     ├── Kubernetes (watch API)
-          │     ├── Slack (slack-sdk)
-          │     └── PagerDuty (REST API)
-          │
-          ├── Observability Sources
-          │     │
-          │     ├── Prometheus (PromQL)
-          │     └── Loki (LogQL)
-          │
-          └── Remediation Pipeline
-                │
-                ├── Runbook engine (YAML)
-                ├── Suspect ranking (4-signal scorer)
-                ├── Approval broker (HMAC-SHA256 tokens)
-                │     │
-                │     ├── 5-minute TTL
-                │     ├── Single-use nonces
-                │     └── Append-only audit log
-                │
-                └── Executor (minikube + Boutique demo)
-                        │
-                        ▼
-                  Safe remediation via kubectl
-```
+<img src="./watchtower system architecture.png" width="800"/>
 
 **How it works.** Claude Desktop connects to the WatchTower MCP server over stdio. The server exposes 12 tools that let Claude query a unified Postgres event store (fed by four collectors), run PromQL against Prometheus and LogQL against Loki, rank suspect services, and propose remediations from YAML runbooks. Remediations execute only when the operator returns a valid HMAC-signed approval token - enforcing human-in-the-loop safety with a full audit trail.
 
@@ -76,8 +35,6 @@ The full incident-response loop - detection, investigation, safe remediation, po
 - **IaC:** Terraform (`kreuzwerker/docker`, `hashicorp/kubernetes`, `hashicorp/helm` providers)
 - **Testing:** pytest (35 tests, ~0.3s runtime)
 - **Frontend:** Vanilla HTML/CSS/JS, deployed via GitHub Pages
-
----
 
 ## The 12 MCP tools
 

@@ -18,7 +18,7 @@ WatchTower exposes 12 MCP tools that let Claude Desktop:
 
 The full incident-response loop - detection, investigation, safe remediation, postmortem - runnable locally on minikube against Google's Online Boutique demo.
 
-## Architecture
+## System Architecture
 
 <img src="./watchtower system architecture.png" width="800"/>
 
